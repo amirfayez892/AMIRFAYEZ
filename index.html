@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="htmlTag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أمير فايز | AMIR FAYEZ </title>
+    <link rel="icon" href="images/profile.jpg.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <div id="introCurtain" class="intro-curtain" aria-hidden="true">
+        <div class="intro-brand-box">
+            <span class="intro-title">AMIR FAYEZ</span>
+            <span class="intro-sub">أمير فايز</span>
+        </div>
+    </div>
+
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <header class="main-header">
+        <div class="lang-switcher">
+            <button onclick="changeLanguage('de')">DEUTSCH</button>
+            <button onclick="changeLanguage('en')">ENGLISH</button>
+            <button onclick="changeLanguage('ar')">عربي</button>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#" id="navHome">الرئيسية</a>
+            <a href="#about" id="navAbout">عني</a>
+            <a href="#projects" id="navProjects">المشاريع</a>
+            <a href="#services" id="navServices">الخدمات</a>
+            <a href="#contact" id="navContact">التواصل</a>
+        </nav>
+
+        <div class="header-logo-brand" title="اضغط مرتين لتفعيل الوضع الليلي السري" ondblclick="toggleDarkMode()">AMIR FAYEZ</div>
+    </header>
+
+    <section id="about" class="hero-section reveal-on-scroll">
+        <div class="hero-container">
+            <div class="hero-info-right">
+                <div class="names-stack">
+                    <h1 class="name-ar" id="mainTitleAr">أمير فايز</h1>
+                    <h2 class="name-de" id="mainTitleDe">AMIR FAYEZ</h2>
+                    <h3 class="name-en" id="mainTitleEn">AMIR FAYEZ</h3>
+                </div>
+
+                <div class="dynamic-bio-box">
+                    <span id="typedText"></span><span class="cursor">|</span>
+                </div>
+                <p class="sub-title-role" id="subRole">مطور تطبيقات ومواقع إلكترونية محترف</p>
+
+                <a href="#contact" class="cta-btn" id="exploreBtn">اطلب موقعك الآن</a>
+            </div>
+
+            <div class="hero-photo-left">
+                <img src="images/profile.jpg.jpeg" alt="أمير فايز" class="hero-oval-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section reveal-on-scroll">
+        <h2 id="projectsTitle">المواقع والتطبيقات التي قمت ببرمجتها</h2>
+
+        <div class="projects-grid" id="projectsGrid">
+            <div class="project-card interactive-card shehab-project-card reveal-item">
+                <div class="project-preview-img-box">
+                    <img src="images/logo.png.jpeg" alt="موقع شهاب" class="shehab-logo-img">
+                </div>
+                <div class="project-details-content">
+                    <div class="project-tag" id="projTag">موقع ويب احترافي</div>
+                    <h3 class="project-title" id="projTitle">موقع الفنان شهاب</h3>
+                    <p class="project-desc" id="projDesc">موقع تفاعلي مخصص لعرض الأعمال الموسيقية والملفات الشخصية بتصميم عصري وجذاب.</p>
+                    <div class="project-tech">
+                        <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                    </div>
+                    <a href="https://amirfayez892.github.io/" target="_blank" class="project-link-stylish" id="viewProjBtn">
+                        معاينة المشروع الاحترافي <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section reveal-on-scroll">
+        <h2 id="servicesTitle">لماذا تختار خدماتنا البرمجية؟</h2>
+        <div class="services-grid">
+            <div class="service-card interactive-card reveal-item">
+                <i class="fa-solid fa-bolt"></i>
+                <h3 id="serv1Title">سرعة فائقة في التنفيذ</h3>
+                <p id="serv1Desc">نسلمك مشروعك في مدة قياسية وبأعلى كفاءة ممكنة.</p>
+            </div>
+            <div class="service-card interactive-card reveal-item">
+                <i class="fa-solid fa-tags"></i>
+                <h3 id="serv2Title">أسعار استثنائية</h3>
+                <p id="serv2Desc">تكاليف مناسبة لكل الميزانيات مع جودة عالمية لا تقبل المنافسة.</p>
+            </div>
+            <div class="service-card interactive-card reveal-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3 id="serv3Title">دعم واستقرار تام</h3>
+                <p id="serv3Desc">كود برمجي نظيف وآمن قابل للتطوير المستقبلي بسهولة.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section reveal-on-scroll">
+        <h2 id="contactTitle">اطلب موقعك الخاص أو تواصل معي مباشرة</h2>
+        <p id="contactSub">اختر الطريقة المناسبة لك للتواصل وابدأ مشروعك البرمجي معنا الآن:</p>
+
+        <div class="contact-grid-wrapper">
+            <div class="contact-row">
+                <div class="contact-qr-item interactive-card reveal-item">
+                    <a href="https://wa.me/201289845911" target="_blank" class="contact-card whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>واتساب (WhatsApp)</span>
+                    </a>
+                    <img src="images/qr-whatsapp.png" alt="WhatsApp QR" class="qr-large-img" onclick="openModal(this.src, 'https://wa.me/201289845911', 'qr-whatsapp.png')">
+                </div>
+                <div class="contact-qr-item interactive-card reveal-item">
+                    <a href="https://t.me/amirfayez51" target="_blank" class="contact-card telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                        <span>تليجرام (Telegram)</span>
+                    </a>
+                    <img src="images/qr-telegram.png" alt="Telegram QR" class="qr-large-img" onclick="openModal(this.src, 'https://t.me/amirfayez51', 'qr-telegram.png')">
+                </div>
+            </div>
+
+            <div class="contact-row">
+                <div class="contact-qr-item interactive-card reveal-item">
+                    <a href="https://www.facebook.com/share/1A36hWua4S/" target="_blank" class="contact-card facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>فيسبوك (Facebook)</span>
+                    </a>
+                    <img src="images/qr-facebook.png" alt="Facebook QR" class="qr-large-img" onclick="openModal(this.src, 'https://www.facebook.com/share/1A36hWua4S/', 'qr-facebook.png')">
+                </div>
+                <div class="contact-qr-item interactive-card reveal-item">
+                    <a href="https://www.instagram.com/amirfayez53/" target="_blank" class="contact-card instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>إنستغرام (Instagram)</span>
+                    </a>
+                    <img src="images/qr-instagram.png" alt="Instagram QR" class="qr-large-img" onclick="openModal(this.src, 'https://www.instagram.com/amirfayez53/', 'qr-instagram.png')">
+                </div>
+            </div>
+
+            <div class="contact-row single-row">
+                <div class="contact-qr-item featured-qr-item interactive-card reveal-item">
+                    <a href="https://www.tiktok.com/@amirfayez15" target="_blank" class="contact-card tiktok">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <span>تيك توك (TikTok)</span>
+                    </a>
+                    <img src="images/qr-tiktok.png" alt="TikTok QR" class="qr-xl-img" onclick="openModal(this.src, 'https://www.tiktok.com/@amirfayez15', 'qr-tiktok.png')">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p id="footerText">جميع الحقوق محفوظة © 2026 | المطور أمير فايز</p>
+    </footer>
+
+    <div id="qrModal" class="modal" onclick="closeModal(event)">
+        <div class="qr-modal-box" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImg" alt="QR Code Preview">
+            <div class="qr-modal-actions">
+                <a id="downloadQrBtn" class="qr-action-btn download-btn" download="qr-tiktok.png">
+                    <i class="fa-solid fa-download"></i> تنزيل الصورة
+                </a>
+                <button type="button" id="copyQrImageBtn" class="qr-action-btn copy-img-btn" onclick="copyQrImage()">
+                    <i class="fa-regular fa-copy"></i> نسخ الصورة
+                </button>
+                <button type="button" id="copyQrLinkBtn" class="qr-action-btn copy-link-btn" onclick="copyQrLink()">
+                    <i class="fa-solid fa-link"></i> نسخ الرابط
+                </button>
+            </div>
+            <p id="qrFeedbackMsg" class="qr-feedback-msg"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
