@@ -600,3 +600,68 @@ body {
 }
 
 .copy-img
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        padding: 12px 4%;
+        gap: 10px;
+    }
+    .nav-links {
+        justify-content: center;
+        gap: 14px;
+    }
+    .hero-section,
+    .projects-section,
+    .services-section,
+    .contact-section {
+        padding: 45px 5%;
+    }
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 28px;
+    }
+    .hero-info-right,
+    .hero-photo-left {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+    .hero-oval-img {
+        width: 230px;
+        height: 280px;
+    }
+    .name-ar {
+        font-size: 2.1rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-row,
+    .contact-row.single-row {
+        grid-template-columns: 1fr;
+    }
+    .project-preview-img-box {
+        height: 220px;
+    }
+    .qr-large-img,
+    .qr-xl-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 420px) {
+    .lang-switcher button {
+        padding: 5px 9px;
+        font-size: 0.78rem;
+    }
+    .projects-section h2,
+    .services-section h2,
+    .contact-section h2 {
+        font-size: 1.6rem;
+    }
+}
